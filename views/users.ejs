@@ -1,0 +1,29 @@
+<% include _header %>
+
+<div class="row">
+  <img src="<%= user.image %>" alt="">
+  <%= user.displayName %>
+
+  <% if( user.facebook ) { %>
+    <img src="<%= user.facebook.image %>" alt="">
+    У меня <%= user.facebook.friends %> друзей
+  <% } %>
+
+  <% if( user.twitter.lastPost ) { %>
+    Последние Твиты: <%= user.twitter.lastPost %>
+  <% } %>
+</div>
+
+<div class="btn-group-vertical">
+  <a href="/auth/google" type="button" class="<% if( user.google ) { %>googleplus<% } %> btn btn-default">
+    <i class="fa fa-google-plus"></i> Google+
+  </a>
+  <a href="/auth/twitter" type="button" class="<% if( user.twitter ) { %>twitter<% } %> btn btn-default">
+    <i class="fa fa-twitter"></i> <span>Twitter</span>
+  </a>
+  <a href="/auth/facebook" type="button" class="<% if( user.facebook ) { %>facebook<% } %> btn btn-default">
+    <i class="fa fa-facebook"></i> Facebook
+  </a>
+</div>
+
+<% include _footer %>

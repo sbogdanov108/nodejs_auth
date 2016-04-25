@@ -1,0 +1,41 @@
+body {
+  font    : 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.googleplus {
+
+  background : #dd4b39;
+  color      : #fff;
+}
+
+.facebook {
+  color      : #fff;
+  background : #3b5998;
+}
+
+.twitter {
+  background : #55acee;
+  color      : #fff;
+}
+
+.social {
+  margin-top: 50px;
+}
+
+.social .fa {
+  float: left;
+  margin-right : 20px;
+  position     : relative;
+  top          : 4px;
+  left         : 23px;
+}
+
+.social .btn {
+  border: none;
+  font-size : 30px;
+}
+
+.social .btn-group-vertical {
+  margin-top : 40px;
+  width: 240px;
+}
